@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid d-flex justify-content-between header">
+            <div >
+                <a href="#" class="navItems anchor"><h1>NoteIt</h1></a>
+            </div>
+            <div >
+                <ul style="list-style: none;gap: 35px;" class="d-flex align-items-center mt-3" >
+                    <li><h4><a href="index.html" class="navItems anchor">Home</a></h4></li>
+                    <li><h4><a href="Archive.html" class="navItems anchor">Archive</a></h4></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+        <div class="container d-flex flex-column mt-3">
+            <div style="border: 1px solid black;height: 189px; " class="p-4">
+                <textarea class="text-area title" placeholder="Title"></textarea>
+                <textarea class="text-area note" placeholder="Make a note..."></textarea>
+                <button class="btn btn-primary btn-add mt-1 d-flex align-items-center justify-content-center"><h1>+</h1></button>
+            </div>
+        </div>
+        <div class="container noteContainer mt-5">
+            <h2 class="pinnedNote"></h2>
+            <div class="row  showPinnedNote mt-2 d-flex gap-3"></div>
+            <h2 class="otherNote mt-2"></h2>
+            <div class="row row-cols-3 showOtherNotes d-flex mt-3"></div>
+        </div>
+    <script  src="script.js"></script>
+</body>
+</html>
